@@ -118,7 +118,7 @@ with st.form("prediction_form"):
                 avg_grade
             ]]
 
-            model = load(open("model/voting_clf_three_labels.pkl", "rb"))
+            model = load(open("voting_clf_three_labels.pkl", "rb"))
             prediction = model.predict_proba(input_data)[0]
 
             st.markdown("---")
